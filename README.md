@@ -1,7 +1,7 @@
 # Movie Catalog - Spring Boot
 Backend application developed in Java with Spring Boot for educational purposes, focused on consuming an external IMDb API, processing JSON responses, and applying good programming practices.
  
-# Technologies
+## Technologies
 
 - Java
 
@@ -11,7 +11,7 @@ Backend application developed in Java with Spring Boot for educational purposes,
 
 - JSON processing (e.g., Jackson)
 
-# Features
+## Features
 
 - Fetch movie and TV series data via the IMDb API
 
