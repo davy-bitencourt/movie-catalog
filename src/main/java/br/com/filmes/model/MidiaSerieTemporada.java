@@ -6,13 +6,17 @@ package br.com.filmes.model;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import java.util.List;
 
 /**
  *
  * @author dave
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-public record Midia(@JsonAlias("Title") String titulo, 
-		    @JsonAlias("Year") String ano,
-		    @JsonAlias("totalSeasons") String totalTemporada
+public record MidiaSerieTemporada(
+		@JsonAlias("Title") String titulo, 
+		@JsonAlias("Year") String ano,
+		@JsonAlias("Season") int temporada,
+		@JsonAlias("totalSeasons") int totalTemporada,
+		@JsonAlias("Episodes") List<MidiaSerieEpisodio> episodios
 	) {}
