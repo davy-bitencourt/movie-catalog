@@ -40,7 +40,7 @@ public class FilmesApplication implements CommandLineRunner {
 		var dados = conversor.obterDados(json, MidiaSerieTemporada.class);
 
 		List<MidiaSerieTemporada> midias_temporada = new ArrayList<>();
-		for(int i = 0; i <= dados.totalTemporada(); ++i){
+		for(int i = 1; i <= dados.totalTemporada(); i++){
 			json = consumo.pegarDados(ENDERECO+nome_serie+"&season="+i+API_KEY);
 			conversor = new ConverterDados();
 			MidiaSerieTemporada dados_temporada = conversor.obterDados(json, MidiaSerieTemporada.class);
